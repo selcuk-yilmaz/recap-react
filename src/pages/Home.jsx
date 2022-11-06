@@ -12,7 +12,9 @@ const Home = () => {
         <div className="bg-danger  " style={{height:300, width:500}}>asdiöifdöhişlöşöşifdhöşfödfşöhlşöfdöbföhifffffbfçöbhhhhhhhhhhhhhhhhhhhhgfasd</div>
         <div className="bg-warning " style={{height:300, width:500}}>asdfxghblögöfgşlöfgöpkrçöfdböfbmkfdlxcçdfmklxkxmksköfghjrhglglglglglglglglglglglkjshkasd</div>
       </div>
-      <div className="bg-success m-5"  style={{height:500, width:800}}></div>
+      
+      <div className="bg-success m-3"  style={{height:400, width:800}}></div>
+      <div className="bg-warning m-5"  style={{height:500, width:800}}></div>
     </div>
   )
 }
