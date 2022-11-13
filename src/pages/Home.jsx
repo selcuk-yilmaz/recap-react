@@ -17,7 +17,7 @@ const Home = () => {
       <div className="bg-warning m-5"  style={{height:500, width:800}}></div>
       <div className="bg-success m-3"  style={{height:400, width:800}}></div>
       <div className="bg-warning m-5"  style={{height:500, width:800}}></div>
-      <div className="bg-success m-3"  style={{height:400, width:800}}></div>
+     
       <div className="bg-warning m-5"  style={{height:500, width:800}}></div>
       <div className="bg-success m-3"  style={{height:400, width:800}}></div>
       <div className="bg-warning m-5"  style={{height:500, width:800}}></div>

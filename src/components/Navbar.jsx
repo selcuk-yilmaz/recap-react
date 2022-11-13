@@ -57,9 +57,9 @@ function NavBar() {
         <Nav.Link href="#features">Features</Nav.Link>
         <Nav.Link href="#pricing">Pricing</Nav.Link>
         <NavDropdown title="▼ Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1">Actions</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Another actions</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Somethings</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
         </NavDropdown>
