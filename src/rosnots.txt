@@ -12,15 +12,19 @@ sudo apt install python3-rosdep
 sudo rosdep init
 roscore
 
+sudo apt install ros-noetic-rosbridge-*
+
 MAP İÇİN 
 apt install ros-noetic-map-server
 
-sudo apt install ros-noetic-rosbridge-*
 
 
-TERMİNALDE PACKAGELERİ ÇALIŞTIRMA KOMUTLARI
+
+ROS BAĞLANTISI İÇİN
 roscore
 roslaunch rosbridge_server rosbridge_websocket.launch
+
+PACKAGELERİ ÇALIŞTIRMA KOMUTLARI
 roslaunch params_pkg load_params.launch
 rosrun robot publish_robot_state.py
 roslaunch map_pkg start_map.launch 
