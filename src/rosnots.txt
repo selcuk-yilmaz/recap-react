@@ -17,9 +17,7 @@ ROS&WEB BAĞLANTISI İÇİN
 sudo apt install ros-noetic-rosbridge-*
 
 MAP İÇİN 
-apt install ros-noetic-map-server
-
-
+sudo apt install ros-noetic-map-server
 
 
 ROS BAĞLANTISI İÇİN
