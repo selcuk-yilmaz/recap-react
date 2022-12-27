@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div className=" home" style={{ marginLeft: homeWidth }}>
       <div className="d-flex gap-3 p-5 flex-wrap">
-        <div className="bg-danger  " style={{height:300, width:500}}>asdiöifdöhişlöşöşifdhöşfödfşöhlşöfdöbföhifffffbfçöbhhhhhhhhhhhhhhhhhhhhgfasd</div>
-        <div className="bg-warning " style={{height:300, width:500}}>asdfxghblögöfgşlöfgöpkrçöfdböfbmkfdlxcçdfmklxkxmksköfghjrhglglglglglglglglglglglkjshkasd</div>
+        <div className="bg-danger  " style={{height:300, width:500}}>asdiöifdöhişlöhhhhhhgfasd</div>
+        <div className="bg-warning " style={{height:300, width:500}}>asdfxghblögöfglglkjshkasd</div>
       </div>
       
       <div className="bg-success m-3"  style={{height:400, width:800}}></div>
