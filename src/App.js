@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
 import UserContextProvider from './context/UserContext';
 
 import AppRouter from './router/AppRouter'

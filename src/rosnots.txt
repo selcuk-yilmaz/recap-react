@@ -1,0 +1,46 @@
+ROS KURULUM AŞAMALARI
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt update
+sudo apt install ros-noetic-desktop-full
+
+apt search ros-noetic
+source /opt/ros/noetic/setup.bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+sudo apt install python3-rosdep
+sudo rosdep init
+roscore
+
+ROS&WEB BAĞLANTISI İÇİN
+sudo apt install ros-noetic-rosbridge-*
+
+MAP İÇİN 
+sudo apt install ros-noetic-map-server
+
+
+ROS BAĞLANTISI İÇİN
+roscore
+roslaunch rosbridge_server rosbridge_websocket.launch
+
+PACKAGELERİ ÇALIŞTIRMA KOMUTLARI
+roslaunch params_pkg load_params.launch
+rosrun robot publish_robot_state.py
+roslaunch map_pkg start_map.launch 
+
+NOT:İF PAKKAGE'LERDE BİR DEĞİŞİKLİK YAPARSAN
+İLGİLİ PACKAGENİN WORK SPACE NE GİDİP AŞAĞIDAKİ KOMUTU RUN
+catkin_make 
+
+
+
+
+
+
+
+
+
+
+
+roslaunch map_pkg start_map.launch 
