@@ -44,3 +44,23 @@ catkin_make
 
 
 roslaunch map_pkg start_map.launch 
+
+
+
+sudo apt install ros-noetic-costmap-queue
+rosdep install --from-paths src --ignore-src -r -y
+rospack profile
+rospack profile
+gedit .bashrc
+cd src/mir_robot/
+start
+cd catkin_ws/
+catkin_make
+start
+
+
+
+
+
+
+

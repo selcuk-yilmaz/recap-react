@@ -1,0 +1,27 @@
+İLK KURULUMDAN SONRA YAPILACAK İŞLEMLER
+sudo apt-get update
+sudo apt-get intall nodejs
+sudo apt-get install npm
+nodejs -v
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+*Terminal aç kapa
+
+sudo npm install --global yarn
+HERHANGİ BİR UYGULAMAYI TERMİNALDEN YÜKLEME
+sudo dpkg -i Downloads/teamviewer_15.36.8_amd64.deb 
+
+
+16 KASIMDAN GEÇERLİ 90 GÜNLÜK GİTHUB TOKEN
+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
+
+TOKEN İSTEMEMESİ İÇİN
+git config --global credential.helper store
+
+
+UBUNTUDA USB BELLEK E VERİ ATMAK İÇİN
+sudo mount -o remount,rw /media/selcuk/8C2A-DF9E
+cp -r /home/selcuk/github/ /media/selcuk/8C2A-DF9E/
+

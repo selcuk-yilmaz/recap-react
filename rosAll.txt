@@ -1,0 +1,90 @@
+ROS İLK KURULUM KOMUTLARI
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt update
+sudo apt install ros-noetic-desktop-full
+apt search ros-noetic
+source /opt/ros/noetic/setup.bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+sudo apt install python3-rosdep
+sudo rosdep init
+roscore
+cd catkin_ws/
+catkin_make
+cd
+
+ROS İLK KURULUM SONRASI YAPILACAKLAR
+sudo apt install ros-noetic-rosbridge-*
+sudo apt install ros-noetic-map-server
+sudo apt install ros-noetic-map-server
+sudo apt install ros-noetic-costmap-queue
+rosdep install --from-paths src --ignore-src -r -y
+rospack profile
+sudo apt install ros-noetic-map-server
+
+Home daki .bashrc dosyasına aşğıdaki komutları ekle
+source ~/catkin_ws/devel/setup.bash
+alias start='roslaunch mir_simulation start_system.launch'
+
+PACKAGE'LARI ÇALIŞTIRMAK İÇİN
+roscore
+roslaunch rosbridge_server rosbridge_websocket.launch
+roslaunch map_pkg start_map.launch
+roslaunch params_pkg load_params.launch
+roslaunch map_pkg start_map.launch
+rosrun robot publish_robot_state.py
+
+!!!catkin_ws klasörü oluştur ve içine paketlerin koy
+!!!Terminalden catkin_ws klasörüne gir ve catkin_make yap
+!!!catkin_ws de ki her değişiklikte catkin_make yapmalısın
+!!!TOPİCLERİ GÖRMEK İÇİN => rostopic list
+
+
+
+TOPİC LİSTELEMEK VE TOPİC İÇİNİ OKUMA GENEL KOMUTLAR
+TÜM TOPİC İSİMLERİ
+rostopic list
+BURDA YAYINDA OLAN POSİTİON VAR  
+rostopic echo /mir_robot1/move_base_simple/goal 
+BURDA TOPİC NAME YE GÖRE SUBCRİBE YAPMA VAR DİNLEME YAPABİLİRSİN
+rostopic echo /mir_robot1/mobile_base_controller/cmd_vel 
+BURDA TOPİC TYPE VAR  
+rostopic info /mir_robot1/move_base_simple/goal
+BURDA 
+rosparam get /EmergencyStop
+
+
+
+
+
+
+
+
+!!!ÇEŞİTLİ KONTROLLER
+rostopic echo /robot_pose 
+rosparam list | grep status
+rostopic echo /mir_robot1/move_base/status 
+rostopic echo /mir_robot1/move_base_node/SBPLLatticePlanner/plan
+rosnode list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

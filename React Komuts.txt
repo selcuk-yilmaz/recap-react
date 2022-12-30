@@ -1,0 +1,12 @@
+REACT ERORR DÜZELTME KOMUTLARI
+
+npm config set legacy-peer-deps true
+Yukarıdaki komuttan sonra sıkıntılı paketleri tekrar yükle
+npm i paket adı
+
+
+
+
+npm install -g serve
+serve -s build
+npm run build or yarn build
