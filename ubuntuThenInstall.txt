@@ -25,3 +25,8 @@ UBUNTUDA USB BELLEK E VERİ ATMAK İÇİN
 sudo mount -o remount,rw /media/selcuk/8C2A-DF9E
 cp -r /home/selcuk/github/ /media/selcuk/8C2A-DF9E/
 
+
+
+TERMİNALDEN DİREKT PAGE İ RUN ETME
+google-chrome http://localhost:3000
+

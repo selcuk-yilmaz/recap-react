@@ -46,14 +46,21 @@ rosrun robot publish_robot_state.py
 TOPİC LİSTELEMEK VE TOPİC İÇİNİ OKUMA GENEL KOMUTLAR
 TÜM TOPİC İSİMLERİ
 rostopic list
+
 BURDA YAYINDA OLAN POSİTİON VAR  
 rostopic echo /mir_robot1/move_base_simple/goal 
+
 BURDA TOPİC NAME YE GÖRE SUBCRİBE YAPMA VAR DİNLEME YAPABİLİRSİN
 rostopic echo /mir_robot1/mobile_base_controller/cmd_vel 
+
 BURDA TOPİC TYPE VAR  
 rostopic info /mir_robot1/move_base_simple/goal
-BURDA 
+
+PARAMETRE LİSTESİNDEN /EmergencyStop'U GETİR
 rosparam get /EmergencyStop
+
+TOPİC LİSTESİNDEN ODOM U BUL KOMUTU
+rostopic list | grep odom
 
 
 
